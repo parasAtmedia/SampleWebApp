@@ -24,7 +24,7 @@
 	      <a class="navbar-brand" href="#">Welcome</a>
 	    </div>
 	    <ul class="nav navbar-nav">
-	      <li class="active"><a href="#home">Home</a></li>
+	      <li><a href="#home">Home</a></li>
 	      <li><a href="#" id="opt1">Look and Feel</a></li>
 	      <li><a href="#" id="opt2">Customize Ads</a></li>
 	      <li><a href="#" id="opt3">Web Search</a></li>
@@ -33,15 +33,18 @@
 	</nav>	
 
 
-	<form action="http://172.16.153.8:5555/register" method="post">
-		Enter the domain URL:<br>
-		<input type="text" name="domain"><br>
+	
 		
 		
 
 		<div class="container">
-			<div class="sections" id="page1" hidden>
-				Home
+			<div class="sections" id="page1" active>
+				<form action="http://172.16.153.8:5555/register" method="post">
+					Enter the domain URL:<br>
+					<input type="text" name="domain"><br>
+					<input type="submit" value="Submit">
+				</form>
+
 			</div>
 
 			<div class="sections" id="page2" hidden>
@@ -58,8 +61,10 @@
 			</div>
 		</div>
 		
-		<input type="submit" value="Submit">
-	</form>
+		
+	
+
+
 
 	
 </body>
