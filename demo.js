@@ -31,6 +31,22 @@ $(document).ready(function () {
         $("#sections_nav3").hide();
         console.log("page4click");
     });
+
+    $("#submit_btn_sections_nav4").click(function f(){
+    		console.log("Form click ");
+    	var formData = JSON.stringify($("#preferences_form").serializeArray());
+    	document.alert(formData);
+		console.log(formData);
+		$.ajax({
+		  type: "POST",
+		  url: "http://172.16.170.26:5555/register",
+		  data: formData,
+		  success: function(){ console.log("Hello");},
+		  dataType: "json",
+		  contentType : "application/json"
+			});
+	    
+	    });
 });
 
 function fnChangeBorder(index){

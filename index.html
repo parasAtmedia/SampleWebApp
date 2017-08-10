@@ -39,14 +39,15 @@
             </div>
         </nav>
        
-         
+        
 		<div class="container">
+            <form action="http://172.16.170.26:5555/register" method="post" name="preferences_form">
 			<div class="sections" id="sections_nav1" active>
-				<form action="http://172.16.153.8:5555/register" method="post">
+				
 					Enter the domain URL:<br><br>
 					<input type="text" name="domain"><br><br>
-					<input type="submit" value="Submit">
-				</form>
+					<!-- <input type="submit" value="Submit"> -->
+				
 				<br>
 				<button type="button" class="btn btn-primary" margin-top="30px" id="btn_sections_nav1">Next</button>
 				</div>
@@ -63,37 +64,6 @@
 			</div>
 
 
-
-        <div class="container">
-        
-
-            <div class="sections" id="sections_nav1" active>
-                <form action="http://172.16.153.8:5555/register" method="post">
-                    Enter the domain URL:<br><br>
-                    <input type="text" name="domain"><br><br>
-                    <input type="submit" value="Submit">
-                </form>
-                <br>
-                <button type="button" class="btn btn-primary" margin-top="30px">Next</button>
-            </div>
-        
-
-
-            <div class="sections" id="sections_nav2" hidden>
-                Set the layout of your search engine. Click the save button to publish your changes.
-                <table id="table_nav2" cellpadding="40" >
-                    <tr class="select">
-                        <td><img src="overlay.png" alt="overlay" id = "img1_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(1)"></td>
-                        <td><img src="Fullwidth.png" alt="Fullwidth" id = "img2_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(2)"></td>
-                        <td><img src="Two page.png" alt="Two page" id = "img3_sections_nav2"  style="width:145px;height:145px;" onclick="fnChangeBorder(3)"></td>
-                    </tr>
-                </table>
-                <input type="checkbox" name="branding"> Do you wish for branding?<br>
-                <button type="button" class="btn btn-primary">Next</button>
-            </div>
-        
-
-
             <div class="sections" id="sections_nav3" hidden>
                 <div class="desc">Ads layout: </div>
                 <br>
@@ -104,14 +74,12 @@
                 <div class="row">
                     <div class="input-group">
                         <div class="checkbox">
-                            <label><input type="checkbox" value="">Left</label>
                             <select>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                             </select>
-                            <label><input type="checkbox" value="">Right</label>
                             <select>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -187,8 +155,9 @@
 			<div class="sections" id="sections_nav4" hidden>
 				Web Search
 				<br>
-				<button type="Submit" class="btn btn-primary" id="btn_sections_nav4">Save</button>
+				<input class="btn btn-primary" id="submit_btn_sections_nav4" type="submit" value="Submit">
 			</div>
+            </form>
 		</div>
 	
 </body>
