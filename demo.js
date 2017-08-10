@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $("#a_nav1").click(function () {
+
         $("#sections_nav1").show();
         $("#sections_nav2").hide();
         $("#sections_nav3").hide();
@@ -7,7 +8,7 @@ $(document).ready(function () {
         console.log("page1click");
     });
 
-    $("#a_nav2").click(function () {
+    $("#a_nav2, #btn_sections_nav1").click(function () {
         $("#sections_nav2").show();
         $("#sections_nav1").hide();
         $("#sections_nav3").hide();
@@ -15,7 +16,7 @@ $(document).ready(function () {
         console.log("page2click");
     });
 
-    $("#a_nav3").click(function () {
+    $("#a_nav3, #btn_sections_nav2").click(function () {
         $("#sections_nav3").show();
         $("#sections_nav2").hide();
         $("#sections_nav1").hide();
@@ -23,7 +24,7 @@ $(document).ready(function () {
         console.log("page3click");
     });
 
-    $("#a_nav4").click(function () {
+    $("#a_nav4, #btn_sections_nav3").click(function () {
         $("#sections_nav4").show();
         $("#sections_nav2").hide();
         $("#sections_nav1").hide();
