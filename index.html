@@ -1,71 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>		
-	<title>Samplesite</title>
-	
-	<style type="text/css">
-	</style>
+    <head>
+        <title>Samplesite</title>
+        <style type="text/css">
+        </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="/demo.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Welcome</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#home" id="a_nav1">Home</a></li>
+                    <li><a href="#" id="a_nav2">Look and Feel</a></li>
+                    <li><a href="#" id="a_nav3">Customize Ads</a></li>
+                    <li><a href="#" id="a_nav4">Web Search</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="sections" id="sections_nav1" active>
+                <form class="form-inline" action="http://172.16.153.8:5555/register" method="post">
+                    Enter the domain URL:<br><br>
+                    <input type="text" name="domain"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            
+            <div class="sections" id="sections_nav2" hidden>
+                Look and Feel
+                <input type="checkbox" name="branding"> Do you wish for branding?<br>
+            </div>
+            
+            <div class="sections" id="sections_nav3" hidden>
+                <div class="desc">Ads layout: </div> <br>
+                <div class="desc">Explicit ads in surrounding?</div>
+                    <div class="gallery">
+                        <img src="Adopt1Image.png" alt="Forest" width="300" height="200">
+                    </div>
 
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <div class="row">
+                    <div class="input-group">
+                        <div class="checkbox">
+                            <label><input type="checkbox" value="">Left</label>
+                            <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                            </select>
+                            <label><input type="checkbox" value="">Right</label>
+                            <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                            </select>
+                        </div>
 
-		<!-- Optional theme -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+                    </div>
+                </div> <br>
 
-		<!-- Latest compiled and minified JavaScript -->
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<script type="text/javascript" src="/demo.js"></script>
-</head>
-<body>
-	
-	<nav class="navbar navbar-default">
-	  <div class="container-fluid">
-	    <div class="navbar-header">
-	      <a class="navbar-brand" href="#">Welcome</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	      <li><a href="#home" id="a_nav1">Home</a></li>
-	      <li><a href="#" id="a_nav2">Look and Feel</a></li>
-	      <li><a href="#" id="a_nav3">Customize Ads</a></li>
-	      <li><a href="#" id="a_nav4">Web Search</a></li>
-	    </ul>
-	  </div>
-	</nav>	
+                
+                <div class="desc">Implicit ads within search results?</div>
+                <div class="row">
+                    <div class="gallery">
+                        <img src="Adopt2Image.png">
+                    </div>
+                    <div class="input-group">
+                            <select>
+                                  <option value="0">0</option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                            </select>
+                        </div>
 
+                    </div>
+                </div> <br>
 
-	
-		
-		
-
-		<div class="container">
-			<div class="sections" id="sections_nav1" active>
-				<form action="http://172.16.153.8:5555/register" method="post">
-					Enter the domain URL:<br><br>
-					<input type="text" name="domain"><br><br>
-					<input type="submit" value="Submit">
-				</form>
-
-			</div>
-
-			<div class="sections" id="sections_nav2" hidden>
-				Look and Feel
-				<input type="checkbox" name="branding"> Do you wish for branding?<br>
-			</div>
-
-			<div class="sections" id="sections_nav3" hidden>
-				Customize Ads
-			</div>
-
-			<div class="sections" id="sections_nav4" hidden>
-				Web Search
-			</div>
-		</div>
-		
-		
-	
-
-
-
-	
-</body>
+                
+            </div>
+            <div class="sections" id="sections_nav4" hidden>
+                Web Search
+            </div>
+        </div>
+    </body>
 </html>
