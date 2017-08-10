@@ -4,17 +4,18 @@
 	<title>Samplesite</title>
 	
 	<style type="text/css">
-	table, tr, td{
+	table,img{
 		margin: 30px;
 	},
 	td {
-		padding: 20px;
 		align-content: center;
 	},
 	.selected{
    		border : 1px solid blue;
+	},
+	.btn btn-primary{
+		margin-top:30px ;
 	};
-	
 	</style>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -48,17 +49,18 @@
 					<input type="text" name="domain"><br><br>
 					<input type="submit" value="Submit">
 				</form>
-
-			</div>
-
+				<br>
+				<button type="button" class="btn btn-primary" margin-top="30px">Next</button>
+				</div>
 			<div class="sections" id="sections_nav2" hidden>
 				Set the layout of your search engine. Click the save button to publish your changes.
-				<table id="table_nav2" align="left|center" >
+				<table id="table_nav2" cellpadding="40" >
 					<tr class="select"><td><img src="overlay.png" alt="overlay" id = "img1_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(1)"></td>
 					<td><img src="Fullwidth.png" alt="Fullwidth" id = "img2_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(2)"></td>
 					<td><img src="Two page.png" alt="Two page" id = "img3_sections_nav2"  style="width:145px;height:145px;" onclick="fnChangeBorder(3)"></td></tr>
 				</table>
 				<input type="checkbox" name="branding"> Do you wish for branding?<br>
+				<button type="button" class="btn btn-primary">Next</button>
 			</div>
 
 			<div class="sections" id="sections_nav3" hidden>
@@ -105,14 +107,16 @@
                             </select>
                     </div>
                 </div>
+                <button type="button" class="btn btn-primary">Next</button>
 			</div>
 
-			</div>
+			
 
 			<div class="sections" id="sections_nav4" hidden>
 				Web Search
+				<button type="Submit" class="btn btn-primary">Save</button>
 			</div>
-
+		</div>
 	
 </body>
 </html> 
