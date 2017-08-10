@@ -1,0 +1,13 @@
+input[type="checkbox"]{
+	/*width: 100px; 
+	height: 100px; 
+	zoom: 4;*/
+	transform: scale(1.5);
+	display: flex;
+	flex-direction: row;
+}
+
+img{
+	max-width: 100%
+}
+
