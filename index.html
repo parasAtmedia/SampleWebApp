@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>		
-	<title>Samplesite</title>
-	
-	<style type="text/css">
-	table,img{
-		margin: 30px;
-	},
-	td {
-		align-content: center;
-	},
-	.selected{
-   		border : 1px solid blue;
-	},
-	.btn btn-primary{
-		margin-top:30px ;
-	};
-	</style>
-
+    <head>
+        <title>Samplesite</title>
+        <style type="text/css">
+            table,img{
+            margin: 30px;
+            },
+            td {
+            align-content: center;
+            },
+            .selected{
+            border : 1px solid blue;
+            },
+            .btn btn-primary{
+            margin-top:30px ;
+            };
+        </style>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <!-- Optional theme -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
@@ -40,84 +38,132 @@
                 </ul>
             </div>
         </nav>
-       
-         
-		<div class="container">
-			<div class="sections" id="sections_nav1" active>
-				<form action="http://172.16.153.8:5555/register" method="post">
-					Enter the domain URL:<br><br>
-					<input type="text" name="domain"><br><br>
-					<input type="submit" value="Submit">
-				</form>
-				<br>
-				<button type="button" class="btn btn-primary" margin-top="30px">Next</button>
-				</div>
-			<div class="sections" id="sections_nav2" hidden>
-				Set the layout of your search engine. Click the save button to publish your changes.
-				<table id="table_nav2" cellpadding="40" >
-					<tr class="select"><td><img src="overlay.png" alt="overlay" id = "img1_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(1)"></td>
-					<td><img src="Fullwidth.png" alt="Fullwidth" id = "img2_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(2)"></td>
-					<td><img src="Two page.png" alt="Two page" id = "img3_sections_nav2"  style="width:145px;height:145px;" onclick="fnChangeBorder(3)"></td></tr>
-				</table>
-				<input type="checkbox" name="branding"> Do you wish for branding?<br>
-				<button type="button" class="btn btn-primary">Next</button>
-			</div>
 
-			<div class="sections" id="sections_nav3" hidden>
-				<div class="desc">Ads layout: </div> <br>
+
+
+        <div class="container">
+        
+
+            <div class="sections" id="sections_nav1" active>
+                <form action="http://172.16.153.8:5555/register" method="post">
+                    Enter the domain URL:<br><br>
+                    <input type="text" name="domain"><br><br>
+                    <input type="submit" value="Submit">
+                </form>
+                <br>
+                <button type="button" class="btn btn-primary" margin-top="30px">Next</button>
+            </div>
+        
+
+
+            <div class="sections" id="sections_nav2" hidden>
+                Set the layout of your search engine. Click the save button to publish your changes.
+                <table id="table_nav2" cellpadding="40" >
+                    <tr class="select">
+                        <td><img src="overlay.png" alt="overlay" id = "img1_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(1)"></td>
+                        <td><img src="Fullwidth.png" alt="Fullwidth" id = "img2_sections_nav2" style="width:145px;height:145px;" onclick="fnChangeBorder(2)"></td>
+                        <td><img src="Two page.png" alt="Two page" id = "img3_sections_nav2"  style="width:145px;height:145px;" onclick="fnChangeBorder(3)"></td>
+                    </tr>
+                </table>
+                <input type="checkbox" name="branding"> Do you wish for branding?<br>
+                <button type="button" class="btn btn-primary">Next</button>
+            </div>
+        
+
+
+            <div class="sections" id="sections_nav3" hidden>
+                <div class="desc">Ads layout: </div>
+                <br>
                 <div class="desc">Explicit ads in surrounding?</div>
-                    <div class="gallery">
-                        <img src="Adopt1Image.png" alt="Forest" width="300" height="200">
-                    </div>
-
+                <div class="gallery">
+                    <img src="Adopt1Image.png" alt="Forest" width="300" height="200">
+                </div>
                 <div class="row">
                     <div class="input-group">
                         <div class="checkbox">
                             <label><input type="checkbox" value="">Left</label>
                             <select>
-                                  <option value="0">0</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
                             </select>
                             <label><input type="checkbox" value="">Right</label>
                             <select>
-                                  <option value="0">0</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
                             </select>
                         </div>
-
                     </div>
-                </div> <br>
+                </div>
+                <br>
 
-                
-                <div class="desc">Implicit ads within search results?</div>
+                <div class="des">Ad formats?</div>
+                <table>
+                  <tr>
+                    <td><div class="desc">Small Ad</div></td>
+                    <td><div class="desc">Large Ad</div></td>
+                    <td><div class="desc">LeaderBoard Ad</div></td> 
+                  </tr>
+                  <tr>
+                    <td><img src="small.png" width="200" height="200"></td>
+                    <td><img src="medium.png" width="300" height="250"></td>
+                    <td><img src="leaderboard.png" width="340" height="60"></td>
+                  </tr>
+                  <tr>
+                  <td><label><input type="radio" name="adformat" value="small" checked></label></td>
+                    <td><label><input type="radio" name="adformat" value="large"></label></td>
+                   <td><label><input type="radio" name="adformat" value="leaderboard"></label></td>
+                  </tr>
+                </table>
+              
+                <!-- div style="text-align:left;">
+                    <div class="gallery" style="display: inline-block;">
+                        <div>
+                            <div class="desc">Small Ad</div>
+                            <img src="small.png" width="200" height="200">
+                        </div>
+                    </div>
+                    <div class="gallery" style="display: inline-block;">
+                        <div>
+                            <div class="desc">Large Ad</div>
+                            <img src="medium.png" width="300" height="250">
+                        </div>
+                    </div>
+                    <div class="gallery" style="display: inline-block;">
+                        <div>
+                            <div class="desc">LeaderBoard Ad</div>
+                            <img src="leaderboard.png" width="340" height="60">
+                        </div>
+                    </div>
+                </div>
+ -->
+                <div class="desc">Do you wish for implicit ads within search results?</div>
                 <div class="row">
                     <div class="gallery">
                         <img src="Adopt2Image.png">
                     </div>
                     <div class="input-group">
-                            <select>
-                                  <option value="0">0</option>
-                                  <option value="1">1</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                            </select>
+                        <select>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
                     </div>
                 </div>
+                <br>
                 <button type="button" class="btn btn-primary">Next</button>
-			</div>
+            </div>
+            
 
-			
 
-			<div class="sections" id="sections_nav4" hidden>
-				Web Search
-				<button type="Submit" class="btn btn-primary">Save</button>
-			</div>
-		</div>
-	
-</body>
-</html> 
-    
+            <div class="sections" id="sections_nav4" hidden>
+                Web Search
+                <button type="Submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </body>
+</html>
